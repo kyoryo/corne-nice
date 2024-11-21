@@ -15,7 +15,7 @@
 
         keymap {
             bindings = <&mo 3>;
-            key-positions = <38 39>;
+            key-positions = <37 40>;
         };
     };
 
@@ -30,10 +30,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp F     &kp P      &kp B    &kp J  &kp L      &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&mt LCTRL ESCAPE  &kp A  &kp R  &kp S     &kp T      &kp G    &kp M  &kp N      &kp E      &kp I    &kp O          &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C     &kp D      &kp V    &kp K  &kp H      &kp COMMA  &kp DOT  &kp FSLH       &kp TILDE
-                                &kp LGUI  &kp ENTER  &mo 1    &mo 2  &kp SPACE  &kp RALT
+&kp TAB           &kp Q  &kp W  &kp F     &kp P  &kp B                    &kp J      &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
+&mt LCTRL ESCAPE  &kp A  &kp R  &kp S     &kp T  &kp G                    &kp M      &kp N  &kp E      &kp I    &kp O          &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C     &kp D  &kp V                    &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH       &kp TILDE
+                                &kp LGUI  &mo 1  &mt RIGHT_SHIFT ENTER    &kp SPACE  &mo 2  &kp RALT
             >;
         };
 
