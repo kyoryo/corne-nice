@@ -7,3 +7,7 @@ Setelah firmware di download, tekan 2x tombol reset saat USB terhubung. lalu tin
 
 Ada update baru ZMK Studio remapping tanpa perlu di flash
 https://zmk.studio/
+
+
+mouse support unofficial guideline
+https://gist.github.com/krissen/dd27082e7ab0575619c7a31f4d2ec7ae

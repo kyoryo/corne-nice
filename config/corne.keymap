@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouce.h> // experimental mouse support
+#include <dt-bindings/zmk/mouse.h> // experimental mouse support
 
 
 &soft_off { hold-time-ms = <500>; };
