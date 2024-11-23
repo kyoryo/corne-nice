@@ -7,6 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouce.h> // experimental mouse support
+
 
 &soft_off { hold-time-ms = <500>; };
 
@@ -70,10 +72,10 @@
 
         util_layer {
             bindings = <
-&kp TAB     &trans          &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &trans  &trans  &trans  &trans  &soft_off
-&kp LSHFT   &studio_unlock  &trans        &trans        &trans        &bt BT_CLR_ALL    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans        &trans        &trans            &trans  &trans  &trans
+&kp TAB     &trans          &trans        &trans        &trans        &trans            &trans  &trans          &mmv MOVE_UP      &trans          &trans  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT &trans  &soft_off
+&kp LSHFT   &studio_unlock  &trans        &trans        &trans        &bt BT_CLR_ALL    &trans  &trans          &trans            &trans          &trans  &trans
+                                          &trans      &trans        &trans            &trans  &trans          &kp RALT
             >;
         };
     };
