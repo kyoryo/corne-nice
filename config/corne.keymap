@@ -14,31 +14,9 @@
 
 &soft_off { hold-time-ms = <500>; };
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 600
-
-#define MOVE_UP MOVE_Y(-ZMK_MOUSE_DEFAULT_MOVE_VAL)
-#define MOVE_DOWN MOVE_Y(ZMK_MOUSE_DEFAULT_MOVE_VAL)
-#define MOVE_LEFT MOVE_X(-ZMK_MOUSE_DEFAULT_MOVE_VAL)
-#define MOVE_RIGHT MOVE_X(ZMK_MOUSE_DEFAULT_MOVE_VAL)
-
-
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 10
-
-#undef SCRL_UP
-#undef SCRL_DOWN
-#undef SCRL_LEFT
-#undef SCRL_RIGHT
-#define SCRL_UP MOVE_Y(ZMK_MOUSE_DEFAULT_SCRL_VAL)
-#define SCRL_DOWN MOVE_Y(-ZMK_MOUSE_DEFAULT_SCRL_VAL)
-#define SCRL_LEFT MOVE_X(-ZMK_MOUSE_DEFAULT_SCRL_VAL)
-#define SCRL_RIGHT MOVE_X(ZMK_MOUSE_DEFAULT_SCRL_VAL)
-
-&msc {
-  time-to-max-speed-ms = <500>;                 /* <--- How long time until max speed is reached */
-};
-
 &mmv {
     time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
+    delay-ms = <0>;
 };
 
 / {
