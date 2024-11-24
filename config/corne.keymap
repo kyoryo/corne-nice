@@ -35,7 +35,7 @@
     delay-ms = <0>;
 };
 
-&mwh {
+&msc {
   time-to-max-speed-ms = <500>;                 /* <--- How long time until max speed is reached */
 };
 
