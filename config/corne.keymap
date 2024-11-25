@@ -30,8 +30,8 @@
 #define SCRL_RIGHT MOVE_X(ZMK_MOUSE_DEFAULT_SCRL_VAL)
 
 &soft_off { 
-    /delete-property/ split-peripheral-off-on-press;
     hold-time-ms = <500>; 
+    compatible = "zmk,soft-off-wakeup-sources";
 };
 
 &mmv {
