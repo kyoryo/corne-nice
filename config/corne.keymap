@@ -29,7 +29,10 @@
 #define SCRL_LEFT MOVE_X(-ZMK_MOUSE_DEFAULT_SCRL_VAL)
 #define SCRL_RIGHT MOVE_X(ZMK_MOUSE_DEFAULT_SCRL_VAL)
 
-&soft_off { hold-time-ms = <500>; };
+&soft_off { 
+    /delete-property/ split-peripheral-off-on-press;
+    hold-time-ms = <500>; 
+};
 
 &mmv {
     time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
@@ -117,7 +120,7 @@
 &none       &out OUT_TOG  &out OUT_BLE  &out OUT_USB       &bt BT_CLR_ALL     &soft_off           &none   &none   &none     &none   &trans  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4        &none   &none   &none     &none   &trans  &soft_off
 &none       &none         &none         &none              &trans             &none               &trans  &trans  &trans    &trans  &trans  &trans
-                                        &ext_power EP_TOG  &ext_power EP_OFF  &ext_power EP_ON    &trans  &trans  &kp RALT
+                                        &ext_power EP_OFF  &ext_power EP_ON   &ext_power EP_TOG    &trans  &trans  &kp RALT
             >;
         };
     };
