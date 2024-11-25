@@ -31,7 +31,6 @@
 
 &soft_off { 
     hold-time-ms = <500>; 
-    compatible = "zmk,soft-off-wakeup-sources";
 };
 
 &mmv {
