@@ -107,10 +107,10 @@
 
         util_layer {
             bindings = <
-&none  &none   &none   &none   &trans  &trans    &none           &none           &none              &none                &trans  &kp BSPC
-&none  &none   &none   &none   &none   &none     &none           &none           &none              &none                &trans  &none
-&none  &trans  &trans  &trans  &trans  &none     &trans          &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP      &trans  &trans
-                       &trans  &trans  &trans    &trans          &trans          &kp RALT
+&none  &kp CAPS   &kp KP_NUMLOCK   &none   &trans  &trans    &none           &none           &none                &none                &kp PRINTSCREEN  &kp BSPC
+&none  &none      &none            &none   &none   &none     &none           &none           &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &trans           &none
+&none  &trans     &trans           &trans  &trans  &none     &trans          &kp C_MUTE      &kp C_VOLUME_DOWN    &kp C_VOLUME_UP      &trans           &trans
+                                   &trans  &trans  &trans    &trans          &trans          &kp RALT
             >;
         };
 
